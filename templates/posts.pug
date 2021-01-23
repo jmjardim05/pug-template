@@ -1,0 +1,18 @@
+extends layout.pug
+
+block head
+    title Posts
+block content
+    .container
+        h1.mt-5 Todos os posts
+        table.table.table-dark.table-striped
+            thead
+                th(scope="col") #
+                th(scope="col") Id
+                th(scope="col") Title
+                th(scope="col") Content
+            each post in posts
+                include mixins/posts
+                +post(post)
+            else
+                td No posts found

@@ -4,12 +4,13 @@
   "description": "Exemplo de um site simples usando Pug",
   "main": "index.js",
   "scripts": {
-    "build": "pug templates/*.pug --pretty --out ./build"
+    "build": "pug templates --pretty --out ./build"
   },
   "keywords": [],
   "author": "Henrique Schreiner",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.17.1",
     "pug-cli": "^1.0.0-alpha6"
   }
 }
